@@ -1,0 +1,22 @@
+server:
+  port: "6872"
+
+# DeepSeek model config
+chat_model:
+  api_key: "your-api-key"
+  base_url: "https://ark.cn-beijing.volces.com/api/v3"
+  model: "deepseek-v3-1-terminus"
+
+# Embedding model config (Alibaba DashScope)
+embedding_model:
+  api_key: "your-embedding-api-key"
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "text-embedding-v4"
+
+# Milvus config
+milvus:
+  address: "localhost:19530"
+  collection: "doc_reader"
+
+# Document directory
+file_dir: "./docs"
