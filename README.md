@@ -50,38 +50,6 @@ An intelligent document reading assistant powered by RAG (Retrieval-Augmented Ge
 └─────────────────────────────────────────────────────────────┘
 ```
 
-## Project Structure
-```
-DocReader/
-├── main.go                          # Application entry point
-├── config/config.yaml               # Configuration file
-├── docs/                            # Knowledge base documents
-│
-├── internal/
-│   ├── ai/
-│   │   ├── agent/
-│   │   │   ├── chat_pipeline/       # Chat agent orchestration
-│   │   │   └── knowledge_index_pipeline/  # Document indexing pipeline
-│   │   ├── cmd/                     # CLI tools for testing
-│   │   ├── embedder/                # Text embedding component
-│   │   ├── indexer/                 # Vector indexer component
-│   │   ├── retriever/               # Vector retriever component
-│   │   ├── loader/                  # Document loader component
-│   │   ├── models/                  # LLM client
-│   │   └── tools/                   # Agent tools
-│   ├── handler/                     # HTTP handlers
-│   └── middleware/                  # HTTP middleware
-│
-├── utility/
-│   ├── client/                      # Milvus client
-│   ├── common/                      # Constants
-│   ├── config/                      # Config loader
-│   ├── mem/                         # Conversation memory
-│   └── log_call_back/               # Logging callbacks
-│
-└── manifest/docker/                 # Docker compose for Milvus
-```
-
 ## Quick Start
 
 ### Prerequisites
