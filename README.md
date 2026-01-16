@@ -58,7 +58,7 @@ An intelligent document reading assistant powered by RAG (Retrieval-Augmented Ge
 - Docker & Docker Compose
 - API keys for LLM and Embedding services
 
-### 1. Start Milvus
+### 1. Start Milvus Database
 ```bash
 cd manifest/docker
 docker-compose up -d
